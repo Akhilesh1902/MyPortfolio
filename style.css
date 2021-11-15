@@ -210,6 +210,11 @@ ul {
   margin-left: 2em;
 }
 
+.edn,
+.skills--hobbies {
+  text-transform: capitalize;
+}
+
 .edn h1,
 .skills--hobbies h1 {
   font-size: 2rem;
@@ -249,7 +254,7 @@ ul {
           justify-content: center;
 }
 
-.contact-wrapper {
+.contact--wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +267,7 @@ ul {
           align-items: center;
 }
 
-.contact-wrapper form {
+.contact--wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,18 +275,26 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form--element {
-  margin: 1em 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .form--element input,
 .form--element #message {
+  width: 100%;
   background: #c0e8f9;
   border: none;
   padding: 0.3em 0.5em;
@@ -289,6 +302,7 @@ ul {
 }
 
 .contact--btn {
+  margin-top: 1.5em;
   display: -ms-grid;
   display: grid;
   place-items: center;
