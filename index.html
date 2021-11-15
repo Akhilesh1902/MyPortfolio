@@ -98,18 +98,18 @@
         <div class="container">
             <h1>contact</h1>
             <div class="contact--wrapper">
-                <form action="#">
+                <form name="contact" method="POST" data-netlify="true" action="#">
                     <div class="form--element">
-                        <input type="text" id ='first-name' placeholder="Allen">
+                        <input type="text" name="name" id ='first-name' placeholder="Allen">
                     </div>
                     <div class="form--element">
-                        <input type="text" id ='e-mail' placeholder="allenwalker@gmail.com">
+                        <input type="email" name="email" id ='e-mail' placeholder="allenwalker@gmail.com">
                     </div>
                     <div class="form--element">
-                        <textarea name="" id="message" cols="30" rows="8" placeholder="Your message"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="8" placeholder="Your message"></textarea>
                     </div>
                     <div class="contact--btn">
-                        <button>contact</button>
+                        <button type="submit">contact</button>
                     </div>
                 </form>
                 <div class="icons">
